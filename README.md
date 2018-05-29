@@ -6,25 +6,16 @@ This container helps compiling latex sources without the need to install all lat
 Why should I use this container?
 -----
 
-- Easy setup, compile immediately after image download
 - Preserves UID and GID of local user
 - Use container like local command: `latexdockercmd.sh pdflatex main.tex`
-- Multiple distributions like ubuntu's `texlive-full` to cover all needs
 
 Versions
 --------
-All versions are based on Ubuntu: ([See all tags](https://hub.docker.com/r/blang/latex/))
 
-- [blang/latex:ubuntu (:latest) - Dockerfile.ubuntu](Dockerfile.ubuntu) Ubuntu TexLive distribution: Old but stable, most needed package: texlive-full (3.9GB)
-- [blang/latex:ctanbasic - Dockerfile.basic](Dockerfile.basic) CTAN TexLive Scheme-basic: Up-to-date, only basic packages, base for custom builds (500MB)
-- [blang/latex:ctanfull - Dockerfile.full](Dockerfile.full) CTAN TexLive Scheme-full: Up-to-date, all packages (5.6GB)
+This fork is based on Debian Testing, no built-in images: you have to compile.
 
-If you need...
-- ...the most-stuff-works-out-of-the-box package, try `blang/latex:ubuntu`.
-- ...the most recent version of everything, try `blang/latex:ctanfull`.
-- ...a stable base for your custom texlive build, try `blang/latex:ctanbasic`.
+If u want some ready images, try the ([former repo](https://github.com/blang/latex-docker_))
 
-For stability, choose a more specific version tag ([See all tags](https://hub.docker.com/r/blang/latex/))
 
 Quick Setup
 -----------
